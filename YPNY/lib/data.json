@@ -1,0 +1,47 @@
+{
+  "url" : {
+    "test_login_url": "http://192.168.0.110:8960/#/login",
+    "back_login_url": "http://192.168.0.110:8961/#/login"
+  },
+  "user-account": {
+    "test1": "123456",
+    "admin": "123456",
+    "jujube109": "123456"
+  },
+  "element-path": {
+    "back_username": "//input[@name='username']",
+    "back_password": "//input[@name='password']",
+    "verify_code": "//input[@placeholder='验证码']",
+    "confirm_button": "//span[text()='登录']/parent::button",
+    "assert_success_login": "//span[@class='el-breadcrumb__inner']/span[text()='工艺图']",
+    "username_erro_information": "//input[@name='username']/parent::div/following-sibling::div[1]",
+    "password_erro_information": "//input[@name='password']/parent::div/following-sibling::div[1]",
+    "verify_erro_information": "//span[@title='刷新验证码']/following-sibling::div",
+    "topica_path": "//span[text()='数据采集']",
+    "SIM_button": "//span[text()='SIM卡管理']/parent::li",
+    "sim_add_button": "//i[@class='el-icon-plus']/parent::button",
+    "isplist_buttonpath": "//label[text()='电信运营商']/following-sibling::div[1]/div[1]/div[1]/input",
+    "isps_text": "//div[@class='v-modal']/following-sibling::div[1]/div[1]/div[1]/ul/li",
+    "sim_ownerpath": "//input[@placeholder='持卡人']",
+    "phone_path": "//input[@placeholder='电话']",
+    "confirm": "//*[@id='system-user-view']/div[2]/div/div[3]/button[2]",
+    "check_ownerpath": "//tbody/tr[1]/td[2]",
+    "check_Ism": "//tbody/tr[1]/td[1]",
+    "collection_path": "//span[text()='采集地址']/parent::li",
+    "collection_add_button": "#pane-1 > div > div.e-table > div.action-header > div.left > button:nth-child(1)",
+    "dataid_inputpath": "//input[@placeholder='请输入All Data Id']",
+    "collection_inputpath": "//input[@placeholder='请输入采集地址']",
+    "collection_confirmpath": "#pane-1 > div > div:nth-child(2) > div > div.el-dialog__footer > button.el-button.el-button--primary.el-button--small",
+    "datatext_path": "//*[@id='pane-1']/div/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[1]/div",
+    "addresstext_path": "//*[@id='pane-1']/div/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[2]/div",
+    "factory_path": "//span[text()='厂商设备']",
+    "components_button":"//span[text()='内置零部件']/parent::li",
+    "components_add_button": "//i[@class='el-icon-plus']/parent::button",
+    "image_button": "//div[@class='image-uploader']/div/i",
+    "comName_input": "//input[@placeholder='零部件名称']",
+    "comNumb_input": "//input[@placeholder='型号']",
+    "components_confirm": "//span[text()='添加零部件']/parent::div/following-sibling::div[2]/button[2]",
+    "check_comName": "//tbody/tr[1]/td[1]/div",
+    "check_comNumb": "//tbody/tr[1]/td[2]/div"
+  }
+}
