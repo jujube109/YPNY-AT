@@ -6,7 +6,8 @@ from page.login_page import Login_Page
 from page.devices_components import Components
 import os
 import random
-
+from  lib.upload import WinAuto
+from pywinauto.keyboard import send_keys
 
 class ComponentsTest(unittest.TestCase):
     def setUp(self):
@@ -58,10 +59,13 @@ class ComponentsTest(unittest.TestCase):
         # 点击图片上传按钮
         comp.click_imagebutton(self.image_button)
         time.sleep(1)
-        # 获取Script目录中上传脚本的绝对路径
-        scriptdir = os.path.abspath(os.path.join(os.getcwd(), "../..")) + r"\Script\upload.exe"
+        # 上传图片脚本的绝对路径，getcwd获取的路径是以run文件为基础再拼装的，方便run文件批量执行时
+        imageDir = os.path.abspath(os.getcwd() + r"\TestCase\factorydevices_Case\Images\1.jpg")
         # 执行上传脚本
-        os.system(scriptdir)
+        window = WinAuto("#32770", "打开")
+        window.file_input(imageDir)
+        #直接传入回车符
+        send_keys("{VK_RETURN}")
         time.sleep(2)
         comp.click_button(self.comComfire)
         time.sleep(1)
