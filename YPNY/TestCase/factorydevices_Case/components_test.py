@@ -69,7 +69,7 @@ class ComponentsTest(unittest.TestCase):
         time.sleep(2)
         comp.click_button(self.comComfire)
         time.sleep(1)
-        # 获取添加后第一条数据的名称（第一天数据默认展示最新添加的项）
+        # 获取添加后第一条数据的名称（第一条数据默认展示最新添加的项）
         checkName = comp.comName_check(self.comNanme_check)
         # 获取添加后第一天数据的型号
         checkNum = comp.comNumb_check(self.comNumb_check)
