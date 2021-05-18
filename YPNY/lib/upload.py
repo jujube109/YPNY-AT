@@ -1,8 +1,4 @@
-import os
-dir=os.path.abspath(os.getcwd())+r"\Script\Images\1.jpg"
-print(dir)
 from pywinauto.application import Application
-from pywinauto.keyboard import send_keys
 
 class WinAuto:
 

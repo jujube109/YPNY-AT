@@ -4,6 +4,7 @@ from lib.HwTestReport import HTMLTestReport
 
 test_list=unittest.defaultTestLoader.discover(
     start_dir="TestCase",
+    #修改pattern中的py文件可指定执行TestCase下的测试用例，*代表所有
     pattern="*.py"
 )
 
