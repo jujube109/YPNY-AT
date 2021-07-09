@@ -42,6 +42,11 @@
     "comNumb_input": "//input[@placeholder='型号']",
     "components_confirm": "//span[text()='添加零部件']/parent::div/following-sibling::div[2]/button[2]",
     "check_comName": "//tbody/tr[1]/td[1]/div",
-    "check_comNumb": "//tbody/tr[1]/td[2]/div"
+    "check_comNumb": "//tbody/tr[1]/td[2]/div",
+    "BP_button": "//span[text()='内置设备参数']/parent::li",
+    "BP_addButton": "#pane-0 > div > div.e-table > div.action-header > div.left > button:nth-child(1)",
+    "BP_NameInput": "//input[@placeholder='参数名称']",
+    "BP_TypeInput": "//input[@placeholder='请选择参数类型']",
+    "BP_lipath": "//span[text()='压力']/parent::li/parent::ul/li"
   }
 }
