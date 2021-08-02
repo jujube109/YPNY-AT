@@ -5,19 +5,27 @@ import random
 
 class Get_Parametric:
     def __init__(self):
+     """
+
+     :rtype: object
+     """
      self.current_path=os.path.dirname(__file__)
     def get_url_value(self,value):
         keyword = value
         with open(self.current_path + "/data.json", "r",encoding="utf-8") as data_file:
             #打开data文件，获取约定好的url字典中的所有数据，再通过传入的value，获取指定的数据，’url‘与value值均可在data文件中配置
-            #用例代码中调用时只，需要传入data文件中url下对应的key值
+            #用例代码中调用时,只需要传入data文件中url下对应的key值
             url_json = json.load(data_file)
             all_url=url_json['url']
             need_url=all_url[keyword]
             data_file.close()
             return need_url
             #return url_json['url'][keyword]
-    def get_emelent_path(self,pathname):
+    def get_emelent_path(self,pathname) -> str:
+        """
+
+        :rtype: object
+        """
         keyword=pathname
         with open(self.current_path+"/data.json", "r",encoding="utf-8") as data_file:
             element_json = json.load(data_file)
